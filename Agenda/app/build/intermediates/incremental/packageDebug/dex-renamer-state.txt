@@ -1,0 +1,7 @@
+#Thu Sep 28 23:29:11 BRT 2017
+base.0=C\:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5b0469897635ae5248bfef1bff94011f9eac090c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_170cfed1a8ba0125df70df18ba8634b73f48f100\\classes.dex
+base.1=C\:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_170cfed1a8ba0125df70df18ba8634b73f48f100
+file.0=C\:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5b0469897635ae5248bfef1bff94011f9eac090c\\classes.dex
