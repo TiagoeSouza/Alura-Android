@@ -40,11 +40,11 @@
             android:max="10"
             android:numStars="5"/>
 
-        <Button
+       <!--<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_btnSalvar"
-            android:text="Salvar"/>
+            android:text="Salvar"/>-->
 
     </LinearLayout>
 </ScrollView>

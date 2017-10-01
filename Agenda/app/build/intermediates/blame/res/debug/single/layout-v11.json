@@ -4,18 +4,6 @@
         "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
         "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_media_action.xml"
     },
@@ -32,19 +20,7 @@
         "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_media_action.xml"
-    },
-    {
         "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media.xml"
-    },
-    {
-        "merged": "C:\\Users\\Tiago\\AndroidStudioProjects\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
         "source": "C:\\Users\\Tiago\\.android\\build-cache\\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\\output\\res\\layout-v11\\notification_template_big_media.xml"
     }
 ]

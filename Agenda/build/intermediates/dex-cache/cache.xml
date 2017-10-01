@@ -2,6 +2,78 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\a9e3c50eb0ac122ca00f707cbe2abb4de07bbf1c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_da613742a5a6eab6a0a10acb1f598e5d1c5477e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\7a469e0025b79353ba867c17cb3f63b0fb16a34a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_29f6ad6faf7ca5cf98c942e31f4f07de16b71a2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\301d80a61735b5779b1e53a7697cbf56c4c81d89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_94bbcdad02e9d3cf085c256d7de68abeeaeede01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\833501f592f4ea0280f9aff9ae313e01e1b02e06\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_9a258ebf061bd611dd930d4efbf65cec1088f9ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\efc176f0d784d7d83a28cb7b86cb8a84e78dab9a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_317c4c7ba870c5b0e74677e1a05400c46a6321ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\86a38d68c07e0972bc3d61494d2631ac9a526b41\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_dd6b7da7664293955ed9359149b05997ed25df9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\8311a9ba6606d40573306e3e48227121b6cd077c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_7c84d9c2072bd6603cc1e26a1d4380da6f965e3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_d6e12b339263d4ae3e9698832e1b86f4a7703208.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Alura\Android\Agenda\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
@@ -11,13 +83,76 @@
         <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5b0469897635ae5248bfef1bff94011f9eac090c\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\bcf7373455cbd7b16088953b500b6a526dc72426\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_1214d46589c183296c793d43d00449301f340f7d.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Alura\Android\Agenda\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="d45c8bf6fb291fbe88b9ceb58edb5b0a1e8951b7">
+        sha1="e67cf3c89fa16de06b6ded3a688ff334c9777ec9">
         <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_170cfed1a8ba0125df70df18ba8634b73f48f100\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\8eccdbb5a62257b805939d259bd0f9e45c42745f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_595f61ded377a1b013e4d35c258d60e1f123cfa8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\2e561d1f219ecb07dbf6f209d95f7be89a63afa0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_fb885e309b82ea4b3e7baddf6e088bb7a9a80914.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_3c56e53e4ed7f256a1c074e9890f16f504db2d0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\57e2d3b02ea75fffb72f72d13267268f26d96480\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_86c8ad38ad8032f5cceb3f2970e04739239f0719.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\94c5055be8c8a4fe2b57982df42c5d5d6e99ce89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_448e46ab1e77726c625f8b448403c935003e0d41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tiago\.android\build-cache\3ea14a2782bdd026138d66236b60efb0b61595fd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Alura\Android\Agenda\app\build\intermediates\pre-dexed\debug\classes_5bb481969e2702e00054c664bce35af0fbbebf2b.jar" />
     </item>
 
 </items>

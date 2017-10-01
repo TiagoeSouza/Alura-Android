@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_camera.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_camera.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_mapa.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_mapa.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_confirmar.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_confirmar.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_no_image.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_no_image.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_enviar.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_enviar.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_opcoes.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_opcoes.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_receber.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_receber.png"
+    },
+    {
+        "merged": "C:\\Alura\\Android\\Agenda\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_preferencias.png",
+        "source": "C:\\Alura\\Android\\Agenda\\app\\src\\main\\res\\drawable-mdpi\\ic_preferencias.png"
+    }
+]
