@@ -1,6 +1,12 @@
 package br.com.android.tiago.agendaII;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.provider.Browser;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -13,6 +19,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.List;
+import java.util.jar.JarFile;
+import java.util.jar.Pack200;
 
 import br.com.android.tiago.agendaII.dao.AlunoDAO;
 import br.com.android.tiago.agendaII.modelo.Aluno;
@@ -32,9 +40,9 @@ public class ListaAlunosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Aluno aluno = (Aluno) listaAlunos.getItemAtPosition(position);
-               // Toast.makeText(ListaAlunosActivity.this, String.format("O Aluno: %1$s, clicado!",aluno.getNome()), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(ListaAlunosActivity.this, String.format("O Aluno: %1$s, clicado!",aluno.getNome()), Toast.LENGTH_SHORT).show();
 
-                Intent intentVaiProFormulario = new Intent(ListaAlunosActivity.this,FormularioActivity.class);
+                Intent intentVaiProFormulario = new Intent(ListaAlunosActivity.this, FormularioActivity.class);
                 intentVaiProFormulario.putExtra("aluno", aluno);
                 startActivity(intentVaiProFormulario);
 
@@ -81,20 +89,77 @@ public class ListaAlunosActivity extends AppCompatActivity {
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, final ContextMenu.ContextMenuInfo menuInfo) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        final Aluno aluno = (Aluno) listaAlunos.getItemAtPosition(info.position);
+
+//        Não funciona por conta das permissões do android 5.0 acima, então é necessário antes da ação solicitar prermissão ao usuário, conforme abaixo
+//        Intent intentChamada = new Intent(Intent.ACTION_CALL);
+//        intentChamada.setData(Uri.parse("tel:" + aluno.getTelefone()));
+//        itemChamada.setIntent(intentChamada);
+        MenuItem itemChamada = menu.add("Ligar");
+        itemChamada.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if (ActivityCompat.checkSelfPermission(ListaAlunosActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(ListaAlunosActivity.this, new String[]{Manifest.permission.CALL_PHONE}, 123);
+                } else {
+                    Intent intentChamada = new Intent(Intent.ACTION_CALL);
+                    intentChamada.setData(Uri.parse("tel:" + aluno.getTelefone()));
+                    startActivity(intentChamada);
+                }
+                return false;
+
+            }
+        });
+
+
+        MenuItem itemMapa = menu.add("Visualizar no Mapa");
+        Intent intentMapa = new Intent(Intent.ACTION_VIEW);
+        intentMapa.setData(Uri.parse("geo:0,0?q=" + aluno.getEndereco()));
+        itemMapa.setIntent(intentMapa);
+
+        MenuItem itemSMS = menu.add("Enviar SMS");
+        Intent intentSMS = new Intent(Intent.ACTION_VIEW);
+        intentSMS.setData(Uri.parse("sms:" + aluno.getTelefone()));
+        itemSMS.setIntent(intentSMS);
+
+        MenuItem itemSite = menu.add("Visitar Site");
+        Intent intentSite = new Intent(Intent.ACTION_VIEW);
+        String site = aluno.getSite();
+        if (!site.startsWith("http://")) {
+            site = "http://" + aluno.getSite();
+        }
+        intentSite.setData(Uri.parse(site));
+        itemSite.setIntent(intentSite);
+
         MenuItem deletar = menu.add("Deletar");
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-                Aluno aluno = (Aluno) listaAlunos.getItemAtPosition(info.position);
+
                 AlunoDAO alunoDao = new AlunoDAO(ListaAlunosActivity.this);
                 alunoDao.deleta(aluno);
                 alunoDao.close();
                 carregaLista();
 
-                Toast.makeText(ListaAlunosActivity.this, String.format("O Aluno: %1$s, foi deletado com %2$s!",aluno.getNome(),"sucesso"), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListaAlunosActivity.this, String.format("O Aluno: %1$s, foi deletado com %2$s!", aluno.getNome(), "sucesso"), Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
     }
+
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        // No cenario atual temos que solicitar a permissão do usuário para realizar a chamada telefonica.
+//        // E após o mesmo ter permitido o acesso, é necessário que o usuário selecione a opção de ligar novamente, para conseguir reconhecer a permissão atualizada.
+//
+//        if (requestCode == 123) // Exemplo, provavelmente não está correto o Code para chamada
+//        {
+//            // Faz a chamada telefonica
+//        } else if (requestCode == 124) {
+//            // faz envio do SMS
+//        }
+//
+//    }
 }
