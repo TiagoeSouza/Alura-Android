@@ -4,26 +4,24 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.provider.Browser;
-import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.List;
-import java.util.jar.JarFile;
-import java.util.jar.Pack200;
 
+import br.com.android.tiago.agendaII.adapter.AlunosAdapter;
 import br.com.android.tiago.agendaII.dao.AlunoDAO;
 import br.com.android.tiago.agendaII.modelo.Aluno;
+import br.com.android.tiago.agendaII.converter.AlunoConverter;
 
 public class ListaAlunosActivity extends AppCompatActivity {
 
@@ -76,13 +74,29 @@ public class ListaAlunosActivity extends AppCompatActivity {
         carregaLista();
     }
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_lista_alunos, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_enviar_notas:
+                new EnviaAlunosTask(this).execute();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
     private void carregaLista() {
         AlunoDAO alunoDao = new AlunoDAO(this);
         List<Aluno> alunos = alunoDao.buscaAlunos();
         alunoDao.close();
 
         //String[] alunos = {"Tiago", "Karolina", "Nick", "Paulo", "Fernando", "Fernanda"};
-        ArrayAdapter<Aluno> adapter = new ArrayAdapter<Aluno>(this, android.R.layout.simple_list_item_1, alunos);
+//        ArrayAdapter<Aluno> adapter = new ArrayAdapter<Aluno>(this, android.R.layout.activity_list_item, alunos);
+        AlunosAdapter adapter = new AlunosAdapter(this, alunos);
 
         listaAlunos.setAdapter(adapter);
     }
@@ -127,13 +141,17 @@ public class ListaAlunosActivity extends AppCompatActivity {
         Intent intentSite = new Intent(Intent.ACTION_VIEW);
         String site = aluno.getSite();
         if (!site.startsWith("http://")) {
-            site = "http://" + aluno.getSite();
+            if (!site.startsWith("https://")) {
+                site = "http://" + aluno.getSite();
+            }
         }
         intentSite.setData(Uri.parse(site));
         itemSite.setIntent(intentSite);
 
         MenuItem deletar = menu.add("Deletar");
-        deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+        deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener()
+
+        {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
 

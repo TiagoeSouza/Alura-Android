@@ -18,20 +18,32 @@ import br.com.android.tiago.agendaII.modelo.Aluno;
 
 public class AlunoDAO extends SQLiteOpenHelper {
     public AlunoDAO(Context context) {
-        super(context, "Agenda", null, 1);
+        super(context, "Agenda", null, 2);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE Alunos (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, endereco TEXT, telefone TEXT, site TEXT, nota REAL);";
+        String sql = "CREATE TABLE Alunos (id INTEGER PRIMARY KEY," +
+                " nome TEXT NOT NULL, " +
+                "endereco TEXT, " +
+                "telefone TEXT, " +
+                "site TEXT, " +
+                "nota REAL, " +
+                "caminhoFoto TEXT);";
         db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String sql = "DROP TABLE IF EXISTS Alunos";
-        db.execSQL(sql);
-        onCreate(db);
+//        String sql = "DROP TABLE IF EXISTS Alunos";
+        String sql = "";
+        switch (oldVersion) {
+            case 1:
+                sql = " ALTER TABLE Alunos ADD COLUMN caminhoFoto TEXT";
+                db.execSQL(sql);
+        }
+
+//        onCreate(db);
     }
 
     public void insere(Aluno aluno) {
@@ -57,6 +69,7 @@ public class AlunoDAO extends SQLiteOpenHelper {
             aluno.setTelefone(cursor.getString(cursor.getColumnIndex("telefone")));
             aluno.setSite(cursor.getString(cursor.getColumnIndex("site")));
             aluno.setNota(cursor.getDouble(cursor.getColumnIndex("nota")));
+            aluno.setCaminhoFoto(cursor.getString(cursor.getColumnIndex("caminhoFoto")));
 
             alunos.add(aluno);
         }
@@ -68,13 +81,13 @@ public class AlunoDAO extends SQLiteOpenHelper {
     public void deleta(Aluno aluno) {
         SQLiteDatabase db = getWritableDatabase();
 
-        db.delete("Alunos", "id = ?", new String[]{ aluno.getId().toString() });
+        db.delete("Alunos", "id = ?", new String[]{aluno.getId().toString()});
     }
 
     public void altera(Aluno aluno) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues dados = getContentValues(aluno);
-        db.update("Alunos",dados,"id = ?",new String[]{ aluno.getId().toString() });
+        db.update("Alunos", dados, "id = ?", new String[]{aluno.getId().toString()});
     }
 
     @NonNull
@@ -85,6 +98,17 @@ public class AlunoDAO extends SQLiteOpenHelper {
         dados.put("telefone", aluno.getTelefone());
         dados.put("site", aluno.getSite());
         dados.put("nota", aluno.getNota());
+        dados.put("caminhoFoto", aluno.getCaminhoFoto());
         return dados;
+    }
+
+    public boolean ehAluno(String telefone) {
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM Alunos WHERE telefone = ?", new String[]{telefone});
+        int resultados = cursor.getCount();
+
+        cursor.close();
+        return resultados > 0;
+
     }
 }
