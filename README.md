@@ -1,3 +1,9 @@
+3-) Projeto Agenda III: Referente ao (Curso Android III: Aprimore sua app com Fragments, Google Maps e GPS - Finalizado
+
+      ° Lidando com telas de tamanhos diferentes
+      ° Reaproveitando telas com Fragments
+      ° Trabalhando com mapas   
+  
 2-)   Projeto Agenda II - Referente ao (Curso Android II: Integração com apps e recursos do device) - *Finalizado*
 
       ° Permissões, SMS, mapa e navegador
