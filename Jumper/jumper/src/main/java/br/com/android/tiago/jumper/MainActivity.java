@@ -2,6 +2,7 @@ package br.com.android.tiago.jumper;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 
 import br.com.android.tiago.jumper.engine.Game;
