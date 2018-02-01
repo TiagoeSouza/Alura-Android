@@ -22,6 +22,10 @@ import br.com.android.tiago.jumper.graphic.Tela;
  * Created by Tiago on 25/01/2018.
  */
 
+/********************************
+* https://cursos.alura.com.br/forum/topico-bugs-de-colisao-44126
+* corrigir bug no metodo de colisão.
+* *******************************/
 public class Game extends SurfaceView implements Runnable, OnTouchListener {
     private final Som som;
     private boolean isRunning = true;
