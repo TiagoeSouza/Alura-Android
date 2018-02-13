@@ -1,3 +1,11 @@
+5-) Projeto Agenda IIII: Referente ao (Curso Android com Web Service parte 1: Sincronize sua app com o servidor) - *Finalizado*
+
+      ° Introdução à sincronização
+      ° Melhorando as requisições com o Retrofit
+      ° UUID
+      ° Adaptando App com Migration
+      ° Pegando os alunos do servidor
+
 4-) Projeto Jumper: Referente ao (Curso Jogos com Android: Desenvolva seu próprio Flappy Bird) - *Finalizado*
 
       ° Criando o Jumper
