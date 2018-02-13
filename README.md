@@ -1,4 +1,16 @@
-3-) Projeto Agenda III: Referente ao (Curso Android III: Aprimore sua app com Fragments, Google Maps e GPS - Finalizado
+4-) Projeto Jumper: Referente ao (Curso Jogos com Android: Desenvolva seu próprio Flappy Bird) - *Finalizado*
+
+      ° Criando o Jumper
+      ° Colocando uma imagem de fundo
+      ° Implementando o primeiro cano
+      ° Criando vários canos
+      ° Criando os canos superiores
+      ° Pontuação
+      ° Tratando colisões
+      ° Aprimorando o layout do jogo
+      ° Adicionando som ao jogo
+
+3-) Projeto Agenda III: Referente ao (Curso Android III: Aprimore sua app com Fragments, Google Maps e GPS) - *Finalizado*
 
       ° Lidando com telas de tamanhos diferentes
       ° Reaproveitando telas com Fragments
