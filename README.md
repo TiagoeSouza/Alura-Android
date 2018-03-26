@@ -1,3 +1,5 @@
+## *Projetos de estudos utilizando a plataforma Alura*
+
 5-) Projeto Agenda IIII: Referente ao (Curso Android com Web Service parte 1: Sincronize sua app com o servidor) - *Finalizado*
 
       ° Introdução à sincronização
